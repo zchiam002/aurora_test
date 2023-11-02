@@ -1,0 +1,25 @@
+Hello interviewer, 
+
+I have built a solution to the test by formulating it as a mixed-integer linear program (MILP). 
+The exact code and implementation can be found in the ..//code_base//aurora_test.ipynb file. 
+
+The detailed description as to how I have approached the problem is in the comments of the
+python notebook file. 
+
+In summary, the solution was built using MILP, assuming perfect price information, and traded on
+a user-defined time-horizon. 
+
+The key assumptions are as follows:
+a. Degradation is negligible. 
+b. Cycles equally spread across the lifetime of the battery. 
+c. Battery is always operational, i.e., operating cost still persist regardless of battery operation.
+
+The output of the code can be found in the ../results//results.csv file.
+
+Closing remarks:
+If this were to be used as a forward-looking tool, we need a forecast model. 
+
+
+Requirements to run the solution:
+- basic installation of anaconda
+- pip install pyomo
